@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "name": "HackerNews Tab Links",
+  "description": "This extension forces HN to open links in new tabs.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "run_at" :"document_end",
+      "matches": ["https://news.ycombinator.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
